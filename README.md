@@ -44,6 +44,6 @@ Even though integration is a broad and difficult topic, we can always observer s
 The "patterns" are not copy-paste code samples or shrink-wrap components, but rather nuggets of advice that describe solutions to frequently recurring problems. Used properly, the integration patterns can help fill the wide gap between the high-level vision of integration and the actual system implementation.
 
 
-***Documentation***
+***Project Documentation***
 
 https://github.com/andrescastiglia/het/wiki
