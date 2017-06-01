@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Het", "Het\Het.csproj", "{8D699D6A-5EC6-4465-9DC6-14BD6337F777}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinService", "WinService\WinService.csproj", "{8D699D6A-5EC6-4465-9DC6-14BD6337F777}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{9ECF27E6-CB0B-4770-B0F7-80B20027BB88}"
 EndProject
@@ -84,41 +84,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 11
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://tfs.local.castiglia.com.ar:8080/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Aggregator\\Aggregator.csproj
-		SccProjectName1 = Aggregator
-		SccLocalPath1 = Aggregator
-		SccProjectUniqueName2 = Backend\\Backend.csproj
-		SccProjectName2 = Backend
-		SccLocalPath2 = Backend
-		SccProjectUniqueName3 = Common\\Common.csproj
-		SccProjectName3 = Common
-		SccLocalPath3 = Common
-		SccProjectUniqueName4 = Dummy\\Dummy.csproj
-		SccProjectName4 = Dummy
-		SccLocalPath4 = Dummy
-		SccProjectUniqueName5 = Het\\Het.csproj
-		SccProjectName5 = Het
-		SccLocalPath5 = Het
-		SccProjectUniqueName6 = RecipientList\\RecipientList.csproj
-		SccProjectName6 = RecipientList
-		SccLocalPath6 = RecipientList
-		SccProjectUniqueName7 = Router\\Router.csproj
-		SccProjectName7 = Router
-		SccLocalPath7 = Router
-		SccProjectUniqueName8 = Service\\Service.csproj
-		SccProjectName8 = Service
-		SccLocalPath8 = Service
-		SccProjectUniqueName9 = Setup\\Setup.vdproj
-		SccProjectName9 = Setup
-		SccLocalPath9 = Setup
-		SccProjectUniqueName10 = Splitter\\Splitter.csproj
-		SccProjectName10 = Splitter
-		SccLocalPath10 = Splitter
 	EndGlobalSection
 EndGlobal

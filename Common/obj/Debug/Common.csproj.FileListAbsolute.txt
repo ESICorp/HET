@@ -1,4 +1,5 @@
 C:\Users\acastiglia\Documents\Het\Common\bin\Debug\Het.Common.dll
 C:\Users\acastiglia\Documents\Het\Common\bin\Debug\Het.Common.pdb
+C:\Users\acastiglia\Documents\Het\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
 C:\Users\acastiglia\Documents\Het\Common\obj\Debug\Het.Common.dll
 C:\Users\acastiglia\Documents\Het\Common\obj\Debug\Het.Common.pdb

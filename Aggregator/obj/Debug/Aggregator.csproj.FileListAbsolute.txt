@@ -2,4 +2,3 @@ C:\Users\acastiglia\Documents\Het\Aggregator\bin\Debug\Aggregator.dll
 C:\Users\acastiglia\Documents\Het\Aggregator\bin\Debug\Aggregator.pdb
 C:\Users\acastiglia\Documents\Het\Aggregator\obj\Debug\Aggregator.dll
 C:\Users\acastiglia\Documents\Het\Aggregator\obj\Debug\Aggregator.pdb
-C:\Users\acastiglia\Documents\Het\Aggregator\obj\Debug\Aggregator.csprojResolveAssemblyReference.cache

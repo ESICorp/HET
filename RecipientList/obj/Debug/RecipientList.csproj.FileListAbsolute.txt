@@ -1,5 +1,4 @@
 C:\Users\acastiglia\Documents\Het\RecipientList\bin\Debug\RecipientList.dll
 C:\Users\acastiglia\Documents\Het\RecipientList\bin\Debug\RecipientList.pdb
-C:\Users\acastiglia\Documents\Het\RecipientList\obj\Debug\RecipientList.csprojResolveAssemblyReference.cache
 C:\Users\acastiglia\Documents\Het\RecipientList\obj\Debug\RecipientList.dll
 C:\Users\acastiglia\Documents\Het\RecipientList\obj\Debug\RecipientList.pdb
