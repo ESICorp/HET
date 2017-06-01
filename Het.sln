@@ -1,0 +1,124 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Het", "Het\Het.csproj", "{8D699D6A-5EC6-4465-9DC6-14BD6337F777}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{9ECF27E6-CB0B-4770-B0F7-80B20027BB88}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{282CC154-7681-45C2-9BCF-C15DDAD34C21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{0C5271D1-BCB9-436C-8BFF-CA4093D7601F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend", "Backend\Backend.csproj", "{AC5CEEFC-8D0D-4F6A-B739-CD1595729090}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{3697FDBA-3521-4E7B-9615-C6998434EB5C}"
+	ProjectSection(SolutionItems) = preProject
+		Library\RecipientList.dll = Library\RecipientList.dll
+		Library\Router.dll = Library\Router.dll
+		Library\Service.dll = Library\Service.dll
+		Library\Splitter.dll = Library\Splitter.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{B6B26BC7-35E8-4B66-8087-42291FE5C23A}"
+	ProjectSection(SolutionItems) = preProject
+		Repository\Dummy.dll = Repository\Dummy.dll
+		Repository\Dummy.dll.config = Repository\Dummy.dll.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dummy", "Dummy\Dummy.csproj", "{5CBBAE60-ABA0-4A8D-A0A4-64C8DA062DA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Router", "Router\Router.csproj", "{56098E16-D5BA-495E-959E-EEAADA3F2869}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipientList", "RecipientList\RecipientList.csproj", "{FA567E62-FA4D-438B-86D9-FE98C1702EF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Splitter", "Splitter\Splitter.csproj", "{6471C079-C394-406A-82B2-AF63F45D2F90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aggregator", "Aggregator\Aggregator.csproj", "{6E1218E1-24BA-4357-8A00-999498AE7D06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D699D6A-5EC6-4465-9DC6-14BD6337F777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D699D6A-5EC6-4465-9DC6-14BD6337F777}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D699D6A-5EC6-4465-9DC6-14BD6337F777}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D699D6A-5EC6-4465-9DC6-14BD6337F777}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ECF27E6-CB0B-4770-B0F7-80B20027BB88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ECF27E6-CB0B-4770-B0F7-80B20027BB88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ECF27E6-CB0B-4770-B0F7-80B20027BB88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ECF27E6-CB0B-4770-B0F7-80B20027BB88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{282CC154-7681-45C2-9BCF-C15DDAD34C21}.Debug|Any CPU.ActiveCfg = Debug
+		{282CC154-7681-45C2-9BCF-C15DDAD34C21}.Release|Any CPU.ActiveCfg = Release
+		{0C5271D1-BCB9-436C-8BFF-CA4093D7601F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C5271D1-BCB9-436C-8BFF-CA4093D7601F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C5271D1-BCB9-436C-8BFF-CA4093D7601F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C5271D1-BCB9-436C-8BFF-CA4093D7601F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC5CEEFC-8D0D-4F6A-B739-CD1595729090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC5CEEFC-8D0D-4F6A-B739-CD1595729090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC5CEEFC-8D0D-4F6A-B739-CD1595729090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC5CEEFC-8D0D-4F6A-B739-CD1595729090}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CBBAE60-ABA0-4A8D-A0A4-64C8DA062DA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CBBAE60-ABA0-4A8D-A0A4-64C8DA062DA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CBBAE60-ABA0-4A8D-A0A4-64C8DA062DA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CBBAE60-ABA0-4A8D-A0A4-64C8DA062DA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56098E16-D5BA-495E-959E-EEAADA3F2869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56098E16-D5BA-495E-959E-EEAADA3F2869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56098E16-D5BA-495E-959E-EEAADA3F2869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56098E16-D5BA-495E-959E-EEAADA3F2869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA567E62-FA4D-438B-86D9-FE98C1702EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA567E62-FA4D-438B-86D9-FE98C1702EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA567E62-FA4D-438B-86D9-FE98C1702EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA567E62-FA4D-438B-86D9-FE98C1702EF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6471C079-C394-406A-82B2-AF63F45D2F90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6471C079-C394-406A-82B2-AF63F45D2F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6471C079-C394-406A-82B2-AF63F45D2F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6471C079-C394-406A-82B2-AF63F45D2F90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E1218E1-24BA-4357-8A00-999498AE7D06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E1218E1-24BA-4357-8A00-999498AE7D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E1218E1-24BA-4357-8A00-999498AE7D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E1218E1-24BA-4357-8A00-999498AE7D06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.local.castiglia.com.ar:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Aggregator\\Aggregator.csproj
+		SccProjectName1 = Aggregator
+		SccLocalPath1 = Aggregator
+		SccProjectUniqueName2 = Backend\\Backend.csproj
+		SccProjectName2 = Backend
+		SccLocalPath2 = Backend
+		SccProjectUniqueName3 = Common\\Common.csproj
+		SccProjectName3 = Common
+		SccLocalPath3 = Common
+		SccProjectUniqueName4 = Dummy\\Dummy.csproj
+		SccProjectName4 = Dummy
+		SccLocalPath4 = Dummy
+		SccProjectUniqueName5 = Het\\Het.csproj
+		SccProjectName5 = Het
+		SccLocalPath5 = Het
+		SccProjectUniqueName6 = RecipientList\\RecipientList.csproj
+		SccProjectName6 = RecipientList
+		SccLocalPath6 = RecipientList
+		SccProjectUniqueName7 = Router\\Router.csproj
+		SccProjectName7 = Router
+		SccLocalPath7 = Router
+		SccProjectUniqueName8 = Service\\Service.csproj
+		SccProjectName8 = Service
+		SccLocalPath8 = Service
+		SccProjectUniqueName9 = Setup\\Setup.vdproj
+		SccProjectName9 = Setup
+		SccLocalPath9 = Setup
+		SccProjectUniqueName10 = Splitter\\Splitter.csproj
+		SccProjectName10 = Splitter
+		SccLocalPath10 = Splitter
+	EndGlobalSection
+EndGlobal
