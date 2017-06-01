@@ -58,8 +58,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy $(TargetPath) $(SolutionDir)Repository\.
+    <PostBuildEvent Condition="'$(OS)' == 'Windows_NT' ">copy $(TargetPath) $(SolutionDir)Repository\.
 copy $(TargetDir)\*.config $(SolutionDir)Repository\.</PostBuildEvent>
+    <PostBuildEvent Condition="'$(OS)' != 'Windows_NT'">cp $(TargetPath) $(SolutionDir)Repository/.
+cp $(TargetDir)\*.config $(SolutionDir)Repository/.</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
