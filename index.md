@@ -46,4 +46,4 @@ The "patterns" are not copy-paste code samples or shrink-wrap components, but ra
 
 ***Project Documentation***
 
-https://github.com/andrescastiglia/het/wiki
+[https://github.com/andrescastiglia/het/wiki](https://github.com/andrescastiglia/het/wiki)
