@@ -1,6 +1,3 @@
-# Enterprise Application Integration
-
-
 ***The Need for Integration***
 
 Enterprises are typically comprised of hundreds if not thousands of applications that are custom-built, acquired from a third-party, part of a legacy system, or a combination thereof, operating in multiple tiers of different operating system platforms. It is not uncommon to find an enterprise that has 30 different Websites, three instances of SAP and countless departmental solutions.
