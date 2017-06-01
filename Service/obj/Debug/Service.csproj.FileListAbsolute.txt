@@ -1,0 +1,5 @@
+C:\Users\acastiglia\Documents\Het\Service\bin\Debug\Service.dll
+C:\Users\acastiglia\Documents\Het\Service\bin\Debug\Service.pdb
+C:\Users\acastiglia\Documents\Het\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+C:\Users\acastiglia\Documents\Het\Service\obj\Debug\Service.dll
+C:\Users\acastiglia\Documents\Het\Service\obj\Debug\Service.pdb

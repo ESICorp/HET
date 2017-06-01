@@ -1,0 +1,8 @@
+C:\Users\acastiglia\Documents\Het\Backend\bin\Debug\Het.Backend.dll.config
+C:\Users\acastiglia\Documents\Het\Backend\bin\Debug\Het.Backend.dll
+C:\Users\acastiglia\Documents\Het\Backend\bin\Debug\Het.Backend.pdb
+C:\Users\acastiglia\Documents\Het\Backend\bin\Debug\Het.Common.dll
+C:\Users\acastiglia\Documents\Het\Backend\bin\Debug\Het.Common.pdb
+C:\Users\acastiglia\Documents\Het\Backend\obj\Debug\Backend.csprojResolveAssemblyReference.cache
+C:\Users\acastiglia\Documents\Het\Backend\obj\Debug\Het.Backend.dll
+C:\Users\acastiglia\Documents\Het\Backend\obj\Debug\Het.Backend.pdb

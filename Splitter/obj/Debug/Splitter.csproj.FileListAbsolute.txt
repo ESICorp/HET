@@ -1,0 +1,5 @@
+C:\Users\acastiglia\Documents\Het\Splitter\bin\Debug\Splitter.dll
+C:\Users\acastiglia\Documents\Het\Splitter\bin\Debug\Splitter.pdb
+C:\Users\acastiglia\Documents\Het\Splitter\obj\Debug\Splitter.dll
+C:\Users\acastiglia\Documents\Het\Splitter\obj\Debug\Splitter.pdb
+C:\Users\acastiglia\Documents\Het\Splitter\obj\Debug\Splitter.csprojResolveAssemblyReference.cache
