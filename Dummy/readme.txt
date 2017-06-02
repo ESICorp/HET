@@ -1,0 +1,1 @@
+curl -v -H "Content-Type:application/json" http://localhost:9000/Het/execute -d '{"Token": "empty", "InputChannel": "cola1", "OutputChannel": "cola6", "Message": "a|b|c|d|e|f", "TimeoutSeconds": 120}'

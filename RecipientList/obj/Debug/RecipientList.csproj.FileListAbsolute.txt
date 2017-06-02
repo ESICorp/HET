@@ -1,5 +1,5 @@
-C:\Users\acastiglia\Documents\Het\RecipientList\bin\Debug\RecipientList.dll
-C:\Users\acastiglia\Documents\Het\RecipientList\bin\Debug\RecipientList.pdb
-C:\Users\acastiglia\Documents\Het\RecipientList\obj\Debug\RecipientList.dll
-C:\Users\acastiglia\Documents\Het\RecipientList\obj\Debug\RecipientList.pdb
-C:\Users\acastiglia\Documents\Het\RecipientList\obj\Debug\RecipientList.csprojResolveAssemblyReference.cache
+/home/acastiglia/Projects/Het/RecipientList/bin/Debug/RecipientList.dll
+/home/acastiglia/Projects/Het/RecipientList/bin/Debug/RecipientList.pdb
+/home/acastiglia/Projects/Het/RecipientList/obj/Debug/RecipientList.csproj.CoreCompileInputs.cache
+/home/acastiglia/Projects/Het/RecipientList/obj/Debug/RecipientList.dll
+/home/acastiglia/Projects/Het/RecipientList/obj/Debug/RecipientList.pdb

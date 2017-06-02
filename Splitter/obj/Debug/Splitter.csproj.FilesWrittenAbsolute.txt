@@ -1,0 +1,5 @@
+/home/acastiglia/Projects/Het/Splitter/obj/Debug/.NETFramework,Version=v4.6.2.AssemblyAttribute.cs
+/home/acastiglia/Projects/Het/Splitter/bin/Debug/Splitter.pdb
+/home/acastiglia/Projects/Het/Splitter/bin/Debug/Splitter.dll
+/home/acastiglia/Projects/Het/Splitter/obj/Debug/Splitter.dll
+/home/acastiglia/Projects/Het/Splitter/obj/Debug/Splitter.pdb

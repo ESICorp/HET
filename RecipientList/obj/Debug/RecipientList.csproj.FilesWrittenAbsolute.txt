@@ -1,0 +1,5 @@
+/home/acastiglia/Projects/Het/RecipientList/obj/Debug/.NETFramework,Version=v4.6.2.AssemblyAttribute.cs
+/home/acastiglia/Projects/Het/RecipientList/bin/Debug/RecipientList.pdb
+/home/acastiglia/Projects/Het/RecipientList/bin/Debug/RecipientList.dll
+/home/acastiglia/Projects/Het/RecipientList/obj/Debug/RecipientList.dll
+/home/acastiglia/Projects/Het/RecipientList/obj/Debug/RecipientList.pdb

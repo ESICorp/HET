@@ -1,8 +1,9 @@
-C:\Users\acastiglia\Documents\Het\Backend\bin\Debug\Het.Backend.dll.config
-C:\Users\acastiglia\Documents\Het\Backend\bin\Debug\Het.Backend.dll
-C:\Users\acastiglia\Documents\Het\Backend\bin\Debug\Het.Backend.pdb
-C:\Users\acastiglia\Documents\Het\Backend\bin\Debug\Het.Common.dll
-C:\Users\acastiglia\Documents\Het\Backend\bin\Debug\Het.Common.pdb
-C:\Users\acastiglia\Documents\Het\Backend\obj\Debug\Backend.csprojResolveAssemblyReference.cache
-C:\Users\acastiglia\Documents\Het\Backend\obj\Debug\Het.Backend.dll
-C:\Users\acastiglia\Documents\Het\Backend\obj\Debug\Het.Backend.pdb
+/home/acastiglia/Projects/Het/Backend/bin/Debug/Het.Backend.dll.config
+/home/acastiglia/Projects/Het/Backend/bin/Debug/Het.Backend.dll
+/home/acastiglia/Projects/Het/Backend/bin/Debug/Het.Backend.pdb
+/home/acastiglia/Projects/Het/Backend/bin/Debug/Het.Common.dll
+/home/acastiglia/Projects/Het/Backend/bin/Debug/Het.Common.pdb
+/home/acastiglia/Projects/Het/Backend/obj/Debug/Backend.csprojResolveAssemblyReference.cache
+/home/acastiglia/Projects/Het/Backend/obj/Debug/Backend.csproj.CoreCompileInputs.cache
+/home/acastiglia/Projects/Het/Backend/obj/Debug/Het.Backend.dll
+/home/acastiglia/Projects/Het/Backend/obj/Debug/Het.Backend.pdb

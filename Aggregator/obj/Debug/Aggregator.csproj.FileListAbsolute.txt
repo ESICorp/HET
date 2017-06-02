@@ -1,5 +1,5 @@
-C:\Users\acastiglia\Documents\Het\Aggregator\bin\Debug\Aggregator.dll
-C:\Users\acastiglia\Documents\Het\Aggregator\bin\Debug\Aggregator.pdb
-C:\Users\acastiglia\Documents\Het\Aggregator\obj\Debug\Aggregator.dll
-C:\Users\acastiglia\Documents\Het\Aggregator\obj\Debug\Aggregator.pdb
-C:\Users\acastiglia\Documents\Het\Aggregator\obj\Debug\Aggregator.csprojResolveAssemblyReference.cache
+/home/acastiglia/Projects/Het/Aggregator/bin/Debug/Aggregator.dll
+/home/acastiglia/Projects/Het/Aggregator/bin/Debug/Aggregator.pdb
+/home/acastiglia/Projects/Het/Aggregator/obj/Debug/Aggregator.csproj.CoreCompileInputs.cache
+/home/acastiglia/Projects/Het/Aggregator/obj/Debug/Aggregator.dll
+/home/acastiglia/Projects/Het/Aggregator/obj/Debug/Aggregator.pdb

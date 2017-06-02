@@ -4,19 +4,23 @@ using System.ServiceModel.Description;
 using System.ServiceProcess;
 using Het.Backend;
 using System.IO;
+using System.Runtime.Remoting;
 
 namespace Het.Service
 {
     public partial class Het : ServiceBase
     {
         private ServiceHost Host { get; set; }
-        private AppDomain CurrentAppDomain { get; set; }
+        private AppDomain BackendAppDomain { get; set; }
+
+        private ObjectHandle Backend {get; set; }
 
         public static void Main(string[] args)
         {
             var het = new Het();
 
-            if (Environment.UserInteractive)
+            if (Environment.UserInteractive || (
+                args.Length > 0 && args[0] == "Debug"))
             {
                 het.OnStart(args);
 
@@ -39,24 +43,27 @@ namespace Het.Service
 
         protected override void OnStart(string[] args)
         {
+            var manager = typeof(Manager);
+            var dispatcher = typeof(Dispatcher);
+
             var setup = new AppDomainSetup();
             setup.ApplicationName = "Backend";
             setup.ApplicationBase = AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
-            //setup.PrivateBinPath = directories[i];
+            setup.LoaderOptimization = LoaderOptimization.MultiDomainHost;
 
-            var configFile = Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase, "Het.Backend.dll.config");
+            var configFile = Path.Combine(setup.ApplicationBase, "Het.Backend.dll.config");
             if (File.Exists(configFile))
             {
                 setup.ConfigurationFile = configFile;
             }
 
-            this.CurrentAppDomain = AppDomain.CreateDomain("Backend", AppDomain.CurrentDomain.Evidence, setup);
-            this.CurrentAppDomain.CreateInstance(typeof(Manager).Assembly.FullName, typeof(Manager).FullName);
+            this.BackendAppDomain = AppDomain.CreateDomain("Backend", null, setup);
+            this.Backend = this.BackendAppDomain.CreateInstance(manager.Assembly.FullName, manager.FullName);
 
-            this.Host = new ServiceHost(typeof(Dispatcher), new Uri("http://0.0.0.0:9000/"));
-            
+            this.Host = new ServiceHost(dispatcher, new Uri("http://0.0.0.0:9000/"));
+
             var endpoint = this.Host.AddServiceEndpoint(
-                typeof(Dispatcher), new WebHttpBinding(WebHttpSecurityMode.None), "Het");
+                dispatcher, new WebHttpBinding(WebHttpSecurityMode.None), "Het");
 
             endpoint.Behaviors.Add(new WebHttpBehavior());
 
@@ -66,15 +73,23 @@ namespace Het.Service
 
         protected override void OnStop()
         {
-            if (this.Host != null)
+            try 
             {
-                this.Host.Close();
+                if (this.Host != null)
+                {
+                    this.Host.Close();
+                }
             }
+            catch { }
 
-            if (this.CurrentAppDomain != null)
+            try 
             {
-                AppDomain.Unload(this.CurrentAppDomain);
+                if (this.BackendAppDomain != null)
+                {
+                    AppDomain.Unload(this.BackendAppDomain);
+                }
             }
+            catch { }
         }
     }
 }

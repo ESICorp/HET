@@ -1,5 +1,5 @@
-C:\Users\acastiglia\Documents\Het\Service\bin\Debug\Service.dll
-C:\Users\acastiglia\Documents\Het\Service\bin\Debug\Service.pdb
-C:\Users\acastiglia\Documents\Het\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
-C:\Users\acastiglia\Documents\Het\Service\obj\Debug\Service.dll
-C:\Users\acastiglia\Documents\Het\Service\obj\Debug\Service.pdb
+/home/acastiglia/Projects/Het/Service/bin/Debug/Service.dll
+/home/acastiglia/Projects/Het/Service/bin/Debug/Service.pdb
+/home/acastiglia/Projects/Het/Service/obj/Debug/Service.csproj.CoreCompileInputs.cache
+/home/acastiglia/Projects/Het/Service/obj/Debug/Service.dll
+/home/acastiglia/Projects/Het/Service/obj/Debug/Service.pdb

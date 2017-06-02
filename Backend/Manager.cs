@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace Het.Backend
 {
@@ -11,39 +12,33 @@ namespace Het.Backend
 
         private Dictionary<string, Application> Applications { get; set; } = new Dictionary<string, Application>();
 
+        private AppDomain[] AppDomains {get; set; }
+
         private object SyncRoot = new object();
 
         public Manager()
         {
-            this.Init();
+            Task.Delay(250).ContinueWith(t => LoadApplications());
 
             AppDomain.CurrentDomain.DomainUnload += DomainUnload;
         }
 
-        private void Init()
+        private void LoadApplications()
         { 
-#if DEBUG
-            var path = @"C:\Users\Andres\Source\Workspaces\Het\";
-#else
-            var path = AppDomain.CurrentDomain.BaseDirectory;
-#endif
-            var applications = AssemblyHelper.GetApplications(path);
+            var path = AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
+            var tuple = AssemblyHelper.GetApplications(path);
+            this.AppDomains  = tuple.Item1;
 
             this.Applications.Clear();
 
-            foreach (var app in applications)
+            foreach (var app in tuple.Item2)
             {
                 this.Applications.Add(app.Name, app);
             }
 
-            foreach (var app in applications)
+            if (Directory.Exists(Path.Combine(path, "Repository")))
             {
-                app.FireEvents();
-            }
-
-            if (Directory.Exists(Path.Combine(path, "repository")))
-            {
-                this.FileSystemWatcher = new FileSystemWatcher(Path.Combine(path, "repository"), "*.*");
+                this.FileSystemWatcher = new FileSystemWatcher(Path.Combine(path, "Repository"), "*.*");
                 this.FileSystemWatcher.Changed += OnChanged;
                 this.FileSystemWatcher.Created += OnChanged;
                 this.FileSystemWatcher.Renamed += OnChanged;
@@ -66,6 +61,11 @@ namespace Het.Backend
                 {
                     app.Stop();
                 }
+
+                foreach (var appDomain in this.AppDomains) 
+                {
+                    AppDomain.Unload(appDomain);
+                }
             }
         }
 
@@ -85,9 +85,14 @@ namespace Het.Backend
                         app.Stop();
                     }
 
+                    foreach (var appDomain in this.AppDomains) 
+                    {
+                        AppDomain.Unload(appDomain);
+                    }
+
                     Trace.TraceWarning("Reload new library version");
 
-                    this.Init();
+                    Task.Delay(250).ContinueWith(t => LoadApplications());
                 }
             }
         }

@@ -1,0 +1,5 @@
+/home/acastiglia/Projects/Het/Aggregator/obj/Debug/.NETFramework,Version=v4.6.2.AssemblyAttribute.cs
+/home/acastiglia/Projects/Het/Aggregator/bin/Debug/Aggregator.pdb
+/home/acastiglia/Projects/Het/Aggregator/bin/Debug/Aggregator.dll
+/home/acastiglia/Projects/Het/Aggregator/obj/Debug/Aggregator.dll
+/home/acastiglia/Projects/Het/Aggregator/obj/Debug/Aggregator.pdb

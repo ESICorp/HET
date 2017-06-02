@@ -1,0 +1,5 @@
+/home/acastiglia/Projects/Het/Service/obj/Debug/.NETFramework,Version=v4.6.2.AssemblyAttribute.cs
+/home/acastiglia/Projects/Het/Service/bin/Debug/Service.pdb
+/home/acastiglia/Projects/Het/Service/bin/Debug/Service.dll
+/home/acastiglia/Projects/Het/Service/obj/Debug/Service.dll
+/home/acastiglia/Projects/Het/Service/obj/Debug/Service.pdb

@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch",
+            "type": "mono",
+            "request": "launch",
+            "program": "${workspaceRoot}/WinService/bin/Debug/Het.Service.exe",
+            "args": ["Debug"],
+            "cwd": "${workspaceRoot}/WinService/bin/Debug",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "env": {},
+            "console": "integratedTerminal"
+        }
+    ]
+}

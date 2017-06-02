@@ -87,7 +87,8 @@ namespace Het.Backend
                 }
                 catch (MessageQueueException e)
                 {
-                    if (e.MessageQueueErrorCode == MessageQueueErrorCode.IOTimeout)
+                    if (e.MessageQueueErrorCode == MessageQueueErrorCode.IOTimeout ||
+                        e.Message == "No Message Available")
                     {
                         id = null;
 

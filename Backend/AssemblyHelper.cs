@@ -9,11 +9,13 @@ namespace Het.Backend
 {
     public sealed class AssemblyHelper 
     {
-        public static Application[] GetApplications(string path)
+        public static Tuple<AppDomain[], Application[]> GetApplications(string path)
         {
-            var library = Path.Combine(path, "library");
-            var repository = Path.Combine(path, "repository");
+            var application = typeof(Application);
+            var library = Path.Combine(path, "Library");
+            var repository = Path.Combine(path, "Repository");
 
+            AppDomain[] appDomains = null;
             Application[] applications = null;
 
             try
@@ -25,6 +27,7 @@ namespace Het.Backend
                     directories.Add(repository);
                 }
 
+                appDomains = new AppDomain[directories.Count];
                 applications = new Application[directories.Count];
 
                 for (int i=0; i<applications.Length; i++)
@@ -35,6 +38,7 @@ namespace Het.Backend
                     setup.ApplicationName = name;
                     setup.ApplicationBase = AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
                     setup.PrivateBinPath = directories[i];
+                    setup.LoaderOptimization = LoaderOptimization.MultiDomainHost;
 
                     var configFile = Path.Combine(directories[i], name + ".config");
                     if (File.Exists(configFile))
@@ -42,12 +46,17 @@ namespace Het.Backend
                         setup.ConfigurationFile = configFile;
                     }
 
-                    var appDomain = AppDomain.CreateDomain(name, AppDomain.CurrentDomain.Evidence, setup);
+                    appDomains[i] = AppDomain.CreateDomain(name, null, setup);
 
-                    applications[i] = appDomain.CreateInstanceAndUnwrap(
-                        typeof(Application).Assembly.FullName, typeof(Application).FullName) as Application;
-
-                    applications[i].Init(library, directories[i]);
+                    applications[i] = appDomains[i].CreateInstanceAndUnwrap(
+                        application.Assembly.FullName, 
+                        application.FullName,
+                        false,
+                        BindingFlags.Default,
+                        null,
+                        new [] {library, directories[i]},
+                        null,
+                        null) as Application;
                 }
             }
             catch (Exception e)
@@ -55,7 +64,7 @@ namespace Het.Backend
                 Trace.TraceError("Couldn't find directory on {0}: {1}", repository, e.Message);
             }
 
-            return applications;
+            return Tuple.Create(appDomains, applications);
         }
 
         private static List<Assembly> GetAssemblies(string path)
@@ -204,13 +213,15 @@ namespace Het.Backend
 
         public static void WireInternal(object[] list, Application application)
         {
+            var clazz = typeof(Application);
+
             foreach (var @object in list)
             {
                 foreach (var propertyInfo in @object.GetType().GetProperties())
                 {
                     if (propertyInfo.GetCustomAttribute<AutowiredAttribute>() != null)
                     {
-                        if (propertyInfo.PropertyType.IsAssignableFrom(typeof(Application)))
+                        if (propertyInfo.PropertyType.IsAssignableFrom(clazz))
                         {
                             try
                             {

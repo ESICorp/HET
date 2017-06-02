@@ -1,6 +1,6 @@
-C:\Users\acastiglia\Documents\Het\Dummy\bin\Debug\Dummy.dll.config
-C:\Users\acastiglia\Documents\Het\Dummy\bin\Debug\Dummy.dll
-C:\Users\acastiglia\Documents\Het\Dummy\bin\Debug\Dummy.pdb
-C:\Users\acastiglia\Documents\Het\Dummy\obj\Debug\Dummy.csprojResolveAssemblyReference.cache
-C:\Users\acastiglia\Documents\Het\Dummy\obj\Debug\Dummy.dll
-C:\Users\acastiglia\Documents\Het\Dummy\obj\Debug\Dummy.pdb
+/home/acastiglia/Projects/Het/Dummy/bin/Debug/Dummy.dll.config
+/home/acastiglia/Projects/Het/Dummy/bin/Debug/Dummy.dll
+/home/acastiglia/Projects/Het/Dummy/bin/Debug/Dummy.pdb
+/home/acastiglia/Projects/Het/Dummy/obj/Debug/Dummy.csproj.CoreCompileInputs.cache
+/home/acastiglia/Projects/Het/Dummy/obj/Debug/Dummy.dll
+/home/acastiglia/Projects/Het/Dummy/obj/Debug/Dummy.pdb

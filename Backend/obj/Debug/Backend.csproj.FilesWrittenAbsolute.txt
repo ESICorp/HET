@@ -1,0 +1,8 @@
+/home/acastiglia/Projects/Het/Backend/obj/Debug/.NETFramework,Version=v4.6.2.AssemblyAttribute.cs
+/home/acastiglia/Projects/Het/Backend/bin/Debug/Het.Backend.dll.config
+/home/acastiglia/Projects/Het/Backend/bin/Debug/Het.Backend.pdb
+/home/acastiglia/Projects/Het/Backend/bin/Debug/Het.Backend.dll
+/home/acastiglia/Projects/Het/Backend/obj/Debug/Het.Backend.dll
+/home/acastiglia/Projects/Het/Backend/obj/Debug/Het.Backend.pdb
+/home/acastiglia/Projects/Het/Backend/bin/Debug/Het.Common.dll
+/home/acastiglia/Projects/Het/Backend/bin/Debug/Het.Common.pdb
