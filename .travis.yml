@@ -14,5 +14,4 @@ deploy:
     - "Splitter/bin/Release/Splitter.dll"
     - "Dummy/bin/Release/Dummy.dll"
   skip_cleanup: true
-  on:
-    tags: true    
+  overwrite: true
