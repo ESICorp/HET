@@ -2,8 +2,7 @@ language: csharp
 solution: Het.sln
 deploy:
   provider: releases
-  api_key:
-    secure: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCp+DnnoatE7hZ/J+7ckYc4rVudlpo+/p8HBi4qcJSGmBj41FCEh5SEBU/r+KXyiULFcXnOltzjHMgKAdIztQzcoQ0F1STkzfBznX0pF2xh7HOMkSvrQC6KuEnkGCFtAujpvn+UE/LMcSfoUxu6LUqn4jJ2q6ri4r7XkBV7/Qw/BsPWUNFoohJs2o1tVnHlrSCxGuHLJzk3hEAplqE0oTGTd6kWvvdZZxq1RlZbnILzKU8IypsjoWpCC+Zrq9UAj0kpsqpBvWYRL135h2t7ssEFigxHolE43nRJgLUuqziEuEy7JgWp7iBaSCfGUOU1ZRJe0454djWIwy/cg/5eGjx3
+  api_key: AAAAB3NzaC1yc2EAAAADAQABAAABAQCp+DnnoatE7hZ/J+7ckYc4rVudlpo+/p8HBi4qcJSGmBj41FCEh5SEBU/r+KXyiULFcXnOltzjHMgKAdIztQzcoQ0F1STkzfBznX0pF2xh7HOMkSvrQC6KuEnkGCFtAujpvn+UE/LMcSfoUxu6LUqn4jJ2q6ri4r7XkBV7/Qw/BsPWUNFoohJs2o1tVnHlrSCxGuHLJzk3hEAplqE0oTGTd6kWvvdZZxq1RlZbnILzKU8IypsjoWpCC+Zrq9UAj0kpsqpBvWYRL135h2t7ssEFigxHolE43nRJgLUuqziEuEy7JgWp7iBaSCfGUOU1ZRJe0454djWIwy/cg/5eGjx3
   file: 
     - "WinService/bin/Release/Het.Service.exe"
     - "WinService/bin/Release/Het.Common.dll"
